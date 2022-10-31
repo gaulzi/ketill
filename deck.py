@@ -18,8 +18,8 @@ class Deck():
     def deal(self):
         self.card = self.cards[0]
         self.cards.remove(self.card)
-        print("THISIS:{}".format(self.card))
-        #return self.card
+        #print("THISIS:{}".format(self.card))
+        return self.card
 
     def __str__(self) -> str:
         cards = ""

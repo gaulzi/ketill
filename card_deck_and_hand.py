@@ -58,7 +58,7 @@ def deal_hands(deck, hands: list) -> None:
     """Deals cards for the hands."""
     for _ in range(BridgeHand.NUMBER_CARDS):
         for hand in hands:
-            hand.add_card(deck.deal)
+            hand.add_card(deck.deal())
 
 
 if __name__ == "__main__":

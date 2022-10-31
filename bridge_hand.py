@@ -10,10 +10,12 @@ class BridgeHand():
             card = Card()
             self.hand.append(card)
 
-    def add_card(self,card): 
-            if str(self.hand)=="blk":
-                self.hand= card
+    def add_card(self,card):
+        for i in range(len(self.hand)):
+            if str(self.hand[i])=="blk":
+                self.hand[i] = card
                 return self.hand
+
     
     def __str__(self) -> str:
         cards = ""
